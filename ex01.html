@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사각형</title>
+    <style>
+        div{
+            width:300px;
+            height:300px;
+            background:#ff0000;
+        }
+        p{
+            width:300px;
+            height:300px;
+            background:#00ff00;
+        }
+        article{
+            width:300px;
+            height:300px;
+            background:#0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div>클릭하면 #ffff00,더블클릭하면 #ff0000</div>
+    <p>클릭하면 #00ffff,더블클릭하면 #00ff00</p>
+    <article>클릭하면 #ff00ff,더블클릭하면 #0000ff</article>
+
+    <script>        
+        // EVENT div를 클릭하면 #ffff00으로 변경
+        document.querySelector('div').onclick = function(){
+            this.style.background = '#ffff00';
+        };
+        // EVENT div를 클릭더블하면 #ff0000으로 변경
+        document.querySelector('div').ondblclick = function(){
+            this.style.background = '#ff0000';
+        };
+        // EVENT p를 클릭하면 #00ffff으로 변경        
+        // EVENT p를 클릭더블하면 #00ff00으로 변경
+        // EVENT article를 클릭하면 #ff00ff으로 변경        
+        // EVENT article를 클릭더블하면 #0000ff으로 변경
+
+    </script>
+</body>
+</html>
