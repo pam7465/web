@@ -40,20 +40,20 @@
     <p>할리스 멤버십 회원 가입에 필요한 정보를 입력해주세요.</p>
     <form>
         <label>이름</label>
-        <input type="text" value="조환준">
+        <input type="text" value="조환준" required>
         <br>
         <label>아이디(필수)</label>
-        <input type="text">
+        <input type="text" required>
         <input type="button" value="중복확인">
         <br>
         <label>비밀번호(필수)</label>
-        <input type="password">
+        <input type="password" required>
         <br>
         <label>비밀번호 확인(필수)</label>
-        <input type="password">
+        <input type="password" required>
         <br>
         <label>휴대폰 번호(필수)</label>
-        <select>
+        <select required>
             <option>010</option>
             <option>011</option>
             <option>016</option>
@@ -62,9 +62,9 @@
             <option>019</option>
         </select>
         -
-        <input type="text">
+        <input type="text" required>
         -
-        <input type="text">
+        <input type="text" required>
         <input type="button" value="확인">
         <br>
         <input type="checkbox">
