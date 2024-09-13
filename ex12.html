@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex12</title>
+</head>
+<body>
+    <h1>여러가지 폼</h1>
+    <br>
+    <h2>검색 폼</h2>
+    <form>
+        <input type="search" placeholder="검색할 단어를 입력하세요">
+        <input type="submit" value="검색">
+    </form>
+    <h2>로그인 폼</h2>    
+    <form>
+        <input type="text" placeholder="아이디 Or Email">
+        <input type="password" placeholder="비밀번호">
+        <input type="checkbox">
+        <label>아이디저장</label>
+        <input type="submit" value="로그인">
+    </form>
+    <br><br>
+    <h2>이메일 폼</h2>
+    <form>
+        <label>이메일 주소</label>
+        <input type="email">
+        <br>
+        <label>제목</label>
+        <input type="text">
+        <br>
+        <label>내용</label>
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="보내기">
+    </form>
+    <br><br>
+    <h2>join hollys</h2>
+    <p>할리스 멤버십 회원 가입에 필요한 정보를 입력해주세요.</p>
+    <form>
+        <label>이름</label>
+        <input type="text" value="조환준">
+        <br>
+        <label>아이디(필수)</label>
+        <input type="text">
+        <input type="button" value="중복확인">
+        <br>
+        <label>비밀번호(필수)</label>
+        <input type="password">
+        <br>
+        <label>비밀번호 확인(필수)</label>
+        <input type="password">
+        <br>
+        <label>휴대폰 번호(필수)</label>
+        <select>
+            <option>010</option>
+            <option>011</option>
+            <option>016</option>
+            <option>017</option>
+            <option>018</option>
+            <option>019</option>
+        </select>
+        -
+        <input type="text">
+        -
+        <input type="text">
+        <input type="button" value="확인">
+        <br>
+        <input type="checkbox">
+        <label>이메일을 통한 이벤트 소식 수신에 동의합니다. (선택) 할리스의 이벤트 소식 등을 받아보실 수 있습니다.</label>
+        <br>
+        <label>생년월일</label>
+        <input type="date">
+        <input type="radio" name="birthday">
+        <label>양력</label>
+        <input type="radio" name="birthday">
+        <label>음력</label>
+        <br><br><br>
+        <input type="submit" value="회원가입">
+        <input type="button" value="이전페이지">
+    </form>
+</body>
+</html>
