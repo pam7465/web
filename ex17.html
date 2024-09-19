@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex17</title>
+    <style>
+        /* 테그 선택자 = 100 */
+        li{color:#0000ff;}
+        /* 아이디 선택자 = 1 */
+        #list07{color:#ff0000;}
+        /* 클래스 선택자 = 10 */
+        .list{color:#00ff00;}
+        
+        /* 탐색 선택자 */
+        ol li{
+            color:#ffff00;
+        }
+        ol>li{
+            color:#00ffff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>선택자(Selector)</h1>
+    <ul>
+        <li>목록 아이템01</li>
+        <li>목록 아이템02</li>
+        <li class="list list03">목록 아이템03</li>
+        <li>목록 아이템04</li>
+        <li class="list">목록 아이템05</li>
+        <li>목록 아이템06</li>
+        <li class="list" id="list07">목록 아이템07</li>
+        <li>목록 아이템08</li>
+        <li>목록 아이템09</li>
+        <li>목록 아이템10</li>
+    </ul>
+    <ol>
+        <li>오더01</li>
+        <li>오더02</li>
+        <li>오더03</li>
+        <li>오더04</li>
+        <li>오더05</li>
+        <li>오더06</li>
+        <li>오더07</li>
+        <li>오더08</li>
+        <li>오더09</li>
+        <li>오더10</li>
+    </ol>
+</body>
+</html>
