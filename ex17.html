@@ -6,7 +6,10 @@
     <title>ex17</title>
     <style>
         /* 테그 선택자 = 100 */
-        li{color:#0000ff;}
+        li{
+            color:#0000ff;
+            border:1px solid #000000;
+        }
         /* 아이디 선택자 = 1 */
         #list07{color:#ff0000;}
         /* 클래스 선택자 = 10 */
@@ -19,7 +22,44 @@
         ol>li{
             color:#00ffff;
         }
+        ol>.list{
+            color:#ff00ff;
+        }
+        li:nth-child(5){
+            border:5px double #ff0000;
+        }
+        li:nth-child(10){
+            font-size:2em;
+        }
 
+        /* 가상 선택자 */
+        h1:hover{
+            color:#ff0000;
+        }
+        .list03:hover{
+            font-size:4em;
+        }
+        img{
+            width:300px;
+            margin-left:0;
+            transition:1s;
+        }
+        img:hover{
+            width:400px;
+            margin-left:100px;
+        }
+        .warlord::before{
+            content:'충무공 ';
+            display:inline;
+        }
+        .warlord::after{
+            content:' 장군님';
+            display:inline;
+        }
+        .inde::after{
+            content:' 의사';
+            display:inline;
+        }
     </style>
 </head>
 <body>
@@ -33,14 +73,15 @@
         <li>목록 아이템06</li>
         <li class="list" id="list07">목록 아이템07</li>
         <li>목록 아이템08</li>
-        <li>목록 아이템09</li>
-        <li>목록 아이템10</li>
+        <li class="list">목록 아이템09</li>
+        <li class="list">목록 아이템10</li>
     </ul>
+    <img src="./img02.jpg" alt="이미지02">
     <ol>
         <li>오더01</li>
         <li>오더02</li>
         <li>오더03</li>
-        <li>오더04</li>
+        <li class="list">오더04</li>
         <li>오더05</li>
         <li>오더06</li>
         <li>오더07</li>
@@ -48,5 +89,16 @@
         <li>오더09</li>
         <li>오더10</li>
     </ol>
+    <h4>아래 이미지에 마우스를 올려보세요</h4>
+    <img src="./img01.jpg" alt="이미지01">
+    <h2>한국을 빛낸 위인들</h2>
+    <p class="warlord">남이</p>
+    <p class="warlord">이순신</p>
+    <p class="warlord">김시민</p>
+    <p class="inde">안중근</p>
+    <p class="inde">윤봉길</p>
+    <p class="inde">이봉창</p>
+    <h2 class="warlord">조영무</h2>
+    <li class="inde">홍길동</li>
 </body>
 </html>
